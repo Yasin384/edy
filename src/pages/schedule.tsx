@@ -157,7 +157,7 @@ const ResponsiveWrapper = styled.div`
 
 export default function Schedule() {
   const [schedule, setSchedule] = useState<ScheduleItem[] | null>(null);
-  const [error, setError] = useState<string | null>(null);
+  const [, setError] = useState<string | null>(null); // Removed 'error' variable assignment
   const [selectedDay, setSelectedDay] = useState<number>(new Date().getDay());
 
   useEffect(() => {
